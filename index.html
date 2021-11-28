@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Goodreads</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Font awesome kits -->
+    <script
+      src="https://kit.fontawesome.com/b1673043ec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center">
+              <img
+                src="./images/logo.png"
+                alt=""
+                width="100"
+                height="50"
+                class="d-inline-block align-text-top"
+              />
+              Good<span class="text-info">reads</span>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Donates us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- header end -->
+    <!-- main starts -->
+
+    <main>
+      <!-- search section starts -->
+      <section class="my-5 container">
+        <h3 class="text-center my-3">
+          Welcome to good<span class="text-info">reads</span>
+        </h3>
+        <div class="input-group mb-3 w-75 mx-auto">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your book name"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            id="search-value"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="search-btn"
+          >
+            Search
+          </button>
+        </div>
+      </section>
+      <!-- search section ended -->
+      <!-- spinner section -->
+      <section style="display: none" id="spinner">
+        <div class="d-flex justify-content-center align-items-center">
+          <div>
+            <img src="./images/spin.gif" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Spinner section ended -->
+      <!-- no result found section -->
+      <section>
+        <div
+          class="no-result-found d-flex justify-content-center"
+          id="no-result"
+        ></div>
+        <h3 class="invalid text-center text-danger" id="invalid-input">
+          Do not enter empty book!
+        </h3>
+      </section>
+      <!-- no result section ended -->
+      <!-- total result -->
+      <section>
+        <div class="container" id="total-result"></div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="container px-4">
+            <div class="row gx-5" id="book-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- total result ended -->
+    <!-- main ended -->
+    <!-- Footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./Javascript/app.js"></script>
+  </body>
+</html>
